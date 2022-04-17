@@ -5,13 +5,14 @@
 
 .item-details {
     width: 143px;
+}
+.item-details-title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.item-details-title {
-
-}
 .item-details-content {
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
