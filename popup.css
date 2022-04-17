@@ -1,0 +1,17 @@
+.item-thumbsnail {
+    width: 75px;
+    height: 58px;
+}
+
+.item-details {
+    width: 143px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item-details-title {
+
+}
+.item-details-content {
+
+}
