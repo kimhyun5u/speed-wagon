@@ -4,8 +4,12 @@
     "version": "1.0",
     "manifest_version": 3,
     "content_security_policy": {
-        "extension_pages": "chrome-extension://EXTENSION_ID/popup.html",
-        "sandbox": "script-src 'self' https://apis.google.com/js/api.js 'unsafe-eval'; object-src 'self'"
+        "extension_pages": "script-src 'self' https://apis.google.com/js/api.js; object-src 'self'",
+        "sandbox": {
+            "pages": [
+                "popup.html"
+            ]
+        }
     },
     "permissions": ["activeTab"],
     "background": {
