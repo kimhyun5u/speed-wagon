@@ -3,7 +3,8 @@
     "description": "설명충 스피드웨건이 당신의 궁금증을 해결해준다!",
     "version": "1.0",
     "manifest_version": 3,
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab",
+    "https://www.googleapis.com/**"],
     "background": {
         "service_worker": "background.js"
     },
