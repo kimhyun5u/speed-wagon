@@ -4,10 +4,10 @@
     "version": "1.0",
     "manifest_version": 3,
     "content_security_policy": {
-        "extension_pages": "script-src 'self' https://apis.google.com; object-src 'self'",
+        "extension_pages": "script-src 'self'; object-src 'self'",
         "sandbox": {
             "pages": [
-                "popup.html"
+                "https://apis.google.com/"
             ]
         }
     },
