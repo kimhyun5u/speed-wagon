@@ -11,7 +11,7 @@
             console.log(xhreq.responseText)
             let listEl = document.querySelector("#list")
             listEl.innerHTML = ``
-            for(let item of xhreq.response.items) {
+            for(let item of JSON.stringify(xhreq.response.items)) {
                  let divEl = `<div class="d-flex item p-2">
                  <div class="item-thumbsnail me-1" style="background-image: URL(${item.thumbnails.default.url});"></div>
                  <div class="d-flex flex-column item-details">
