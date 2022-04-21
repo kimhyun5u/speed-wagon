@@ -6,7 +6,10 @@
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'"
     },
-    "permissions": ["activeTab", "https://apis.google.com/js/api.js"],
+    "permissions": ["activeTab"],
+    "host_permissions": [
+        "https://apis.google.com/js/api.js"
+    ],
     "background": {
         "service_worker": "background.js"
     },
