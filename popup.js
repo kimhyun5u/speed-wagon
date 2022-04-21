@@ -2,7 +2,7 @@
     document.querySelector("#search").addEventListener('click', function(target) {
         let q = "";
         
-        q.concat(document.querySElector("productName"));
+        q.concat(document.querySelector("#productName"));
         
         q.concat("리뷰");
         
