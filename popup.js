@@ -9,17 +9,18 @@
         let xhreq = new XMLHttpRequest()
         xhreq.onreadystatechange = function() {
             console.log(xhreq.responseText)
+	let res= JSON.parse(xhreq.responseText)
             let listEl = document.querySelector("#list")
             listEl.innerHTML = ``
-            for(let item of JSON.stringify(xhreq.response.items)) {
+            for(let item of res.items){
                  let divEl = `<div class="d-flex item p-2">
-                 <div class="item-thumbsnail me-1" style="background-image: URL(${item.thumbnails.default.url});"></div>
+                 <img class="item-thumbsnail me-1" src="${item.snippet.thumbnails.default.url}"></img>
                  <div class="d-flex flex-column item-details">
                      <div class="item-details-title">${item.snippet.title}</div>
-                     <div class="item-details-content">${item.snippet.descirption}</div>
+                     <div class="item-details-content">${item.snippet.description}</div>
                  </div>
              </div>`
-             listEl += innerHTML += divEl
+             listEl.innerHTML += divEl
              
             }
         }
