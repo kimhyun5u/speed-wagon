@@ -1,10 +1,7 @@
-let requestUrl = "https://www.googleapis.com/youtube/v3/search"
-let apiKey = "AIzaSyB54qFAt2iDi8peCN_oex6UZAtsJ1XumoI"
-
 (function () {
     document.querySelector("#search").addEventListener('click', function(target) {
         gapi.client.init({
-            'apiKey': apiKey,
+            "apiKey": AIzaSyB54qFAt2iDi8peCN_oex6UZAtsJ1XumoI,
         }).then(function() {
             return gapi.client.language.translations.list({
                 q: '잇섭',
